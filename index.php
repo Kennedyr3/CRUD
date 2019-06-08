@@ -13,7 +13,7 @@
 ?>
 <style>
  .bemvindo{
-	background-color:red;
+	/* background-color:red; */
 }
 </style>
 
