@@ -28,6 +28,11 @@
 
 <?php if ($db) : ?>
 
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<link href="css/style.css" rel="stylesheet">
+<!-- <link rel="icon" type="imagem/png" href="imagens/meufavicon.png" /> -->
+
+
 <div class="row">
 	<div class="col-xs-6 col-sm-3 col-md-2">
 		<a href="customers/add.php" class="btn btn-primary">
