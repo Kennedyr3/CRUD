@@ -6,11 +6,16 @@
 	
 	if ($db) {
 		// echo '<h1>Banco de Dados Conectado!</h1>';
-		echo '<h1>Bem-Vindo!</h1>';
+		echo '<h1 class="bemvindo">Bem-Vindo!</h1>';
 	} else {
 		echo '<h1>ERRO: Não foi possível Conectar!</h1>';
 	}
 ?>
+<style>
+ .bemvindo{
+	background-color:red;
+}
+</style>
 
 <?php require_once 'config.php'; ?>
 <?php require_once DBAPI; ?>
