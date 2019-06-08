@@ -61,3 +61,10 @@ function find( $table = null, $id = null ) {
 	close_database($database);
 	return $found;
 }
+?>
+
+<?php		/**	 *  Pesquisa Todos os Registros de uma Tabela	 */	
+function find_all( $table ){
+    return find($table);
+}
+?>
