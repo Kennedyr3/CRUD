@@ -14,6 +14,8 @@
 <style>
  .bemvindo{
 	background-color: rgb(201, 201, 201);
+	height:30px;
+	position: relative;
 }
 </style>
 

@@ -10,8 +10,9 @@
     <link rel="stylesheet" href="<?php echo BASEURL; ?>css/bootstrap.min.css">
     <style>
         body {
-            padding-top: 0px;
-            padding-bottom: 20px;
+            /* padding-top: 10px; */
+            padding-bottom: 0px;
+            margin-bottom: 1px;
         }
 
         /* Main Navigation */
