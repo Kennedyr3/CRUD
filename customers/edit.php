@@ -1,3 +1,4 @@
+<link rel="icon" type="imagem/png" href="CRUD/icon/icon.png" />
 <?php 
   require_once('functions.php'); 
   edit();

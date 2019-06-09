@@ -1,3 +1,5 @@
+<link rel="icon" type="imagem/png" href="icon/icon.png" />
+
 <?php require_once 'config.php'; ?>
 <?php require_once DBAPI; ?>
 
@@ -20,25 +22,28 @@
 	position: relative; */
 }
 </style>
-<div class="alert alert-dark" role="alert">
-<button type="button" class="close" data-dismiss="alert" aria-label="Close">
-    <span aria-hidden="true">&times;</span>
-  </button>
+<?php require_once 'config.php'; ?>
+<?php require_once DBAPI; ?>
+
+<?php include(HEADER_TEMPLATE); ?>
+
+<div class="alert alert-success" role="alert">
+	<button type="button" class="close" data-dismiss="alert" aria-label="Close">
+		<span aria-hidden="true">&times;</span>
+	</button>
+
 <?php
+
 if ($db){
 	echo '<h5 style="text-align:left center;">Bem-Vindo!</h5>';
 		
 } else {
 	echo '<h1>ERRO: Não foi possível Conectar!</h1>';
-}
-	
+}	
+
 ?>
 </div>
 
-<?php require_once 'config.php'; ?>
-<?php require_once DBAPI; ?>
-
-<?php include(HEADER_TEMPLATE); ?>
 <?php $db = open_database(); ?>
 
 <h1>Painel de Controle</h1>
@@ -48,14 +53,13 @@ if ($db){
 
 <!-- <link href="css/bootstrap.min.css" rel="stylesheet">
 <link href="css/style.css" rel="stylesheet"> -->
-<!-- <link rel="icon" type="imagem/png" href="imagens/meufavicon.png" /> -->
 
 
 <div class="row">
 	<div class="col-xs-6 col-sm-3 col-md-2">
-		<a href="customers/add.php" class="btn btn-primary">
+		<a href="customers/add.php" class="btn btn-outline-success">
 			<div class="row">
-				<div class="col-xs-12 text-center">
+				<div class="col-5 text-center">
 					<i class="fa fa-plus fa-5x"></i>
 				</div>
 				<div class="col-xs-12 text-center">
@@ -66,9 +70,9 @@ if ($db){
 	</div>
 
 	<div class="col-xs-6 col-sm-3 col-md-2">
-		<a href="customers" class="btn btn-default">
+		<a href="customers" class="btn btn-outline-success">
 			<div class="row">
-				<div class="col-xs-12 text-center">
+				<div class="col-6 text-center">
 					<i class="fa fa-user fa-5x"></i>
 				</div>
 				<div class="col-xs-12 text-center">
