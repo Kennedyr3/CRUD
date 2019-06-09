@@ -13,9 +13,8 @@ function index() {
 	global $customers;
 	$customers = find_all('customers');
 }
-?>
 
-<?php
+
 /**
  *  Cadastro de Clientes
  */
@@ -33,10 +32,8 @@ function add() {
     header('location: index.php');
   }
 }
-?>
 
 
-<?php
 /**
  *	Atualizacao/Edicao de Cliente
  */
@@ -64,10 +61,7 @@ function edit() {
     header('location: index.php');
   }
 }
-?>
 
-
-<?php
 
 /**
  *  Visualização de um Cliente
@@ -76,9 +70,8 @@ function view($id = null) {
   global $customer;
   $customer = find('customers', $id);
 }
-?>
 
-<?php
+
 /**
  *  Exclusão de um Cliente
  */
@@ -89,3 +82,4 @@ function delete($id = null) {
 
   header('location: index.php');
 }
+?>

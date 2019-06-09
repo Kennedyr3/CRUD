@@ -15,81 +15,25 @@
             margin-bottom: 1px;
         }
 
-        /* Main Navigation */
-nav {
-    background: rgb(11, 39, 66);
-    width: 100%;
-    height:50px;
-}
-
-nav ul {
-    padding: 0;
-    margin: 0;
-}
-
-nav ul li {
-    /* position: relative; */
-    /* display: inline-block; */
-    list-style-type: none;
-    top:-13px;
-    margin: 0;
-    padding: 10px 0;
-    border-radius: 5px;
-}
-    nav ul li:hover {
-        background: black;
-    }
-
-nav ul li a {
-    color: #03ADDF;
-    text-decoration: none;
-    padding: 12px;
-}
-    nav ul li a:hover {
-        color: #fff;
-        text-decoration: none;
-    }
-
-/* Sub Menu */
-nav ul li.parent ul.child {
-    display: none; /* Hide Sub Menu */
-}
-nav ul li.parent:hover ul.child {
-    display: block; /* Show Sub Menu on Hover */
-    position: absolute;
-    top: 40px;
-    background: black;
-}
-
-nav ul li.parent ul.child li {
-    width: 9em;
-    padding: 0;
-}
-nav ul li.parent ul.child li:hover {
-    /* background: #008FBA; */
-}
-nav ul li.parent ul.child li a {
-    display: block;
-}
     </style>
     <link rel="stylesheet" href="<?php echo BASEURL; ?>css/style.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.2/css/font-awesome.min.css">
 </head>
 <body>
 
-    <nav class="navbar" role="navigation">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark" role="navigation">
       <div class="container">
         <div class="navbar">
-          
+
           <a href="<?php echo BASEURL; ?>index.php" class="navbar-brand">CRUD</a>
           <ul class="nav">          
-            <li class="dropdown">
-                <a href="#" class="parent"class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+            <li class="nav-item dropdown">
+                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
                     Clientes <span class="caret"></span>
                 </a>
-                <ul class="dropdown-menu">
-                    <li><a href="<?php echo BASEURL; ?>customers">Gerenciar Clientes</a></li>
-                    <li><a href="<?php echo BASEURL; ?>customers/add.php">Novo Cliente</a></li>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item"  href="<?php echo BASEURL; ?>customers">Gerenciar Clientes</a></li>
+                    <li><a class="dropdown-item"  href="<?php echo BASEURL; ?>customers/add.php">Novo Cliente</a></li>
                 </ul>
             </li>
           </ul>

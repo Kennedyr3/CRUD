@@ -4,20 +4,36 @@
 <?php 
 	$db = open_database(); 
 	
-	if ($db) {
-		// echo '<h1>Banco de Dados Conectado!</h1>';
-		echo '<h5 class="bemvindo">Bem-Vindo!</h5>';
-	} else {
-		echo '<h1>ERRO: Não foi possível Conectar!</h1>';
-	}
+	// if ($db) {
+	// 	// echo '<h1>Banco de Dados Conectado!</h1>';
+	// 	// echo '<h5 id="t" class="alert alert-primary">Bem-Vindo!</h5>';
+		
+	// } else {
+	// 	echo '<h1>ERRO: Não foi possível Conectar!</h1>';
+	// }
 ?>
 <style>
+
  .bemvindo{
-	background-color: rgb(201, 201, 201);
+	/* background-color: rgb(201, 201, 201);
 	height:30px;
-	position: relative;
+	position: relative; */
 }
 </style>
+<div class="alert alert-dark" role="alert">
+<button type="button" class="close" data-dismiss="alert" aria-label="Close">
+    <span aria-hidden="true">&times;</span>
+  </button>
+<?php
+if ($db){
+	echo '<h5 style="text-align:left center;">Bem-Vindo!</h5>';
+		
+} else {
+	echo '<h1>ERRO: Não foi possível Conectar!</h1>';
+}
+	
+?>
+</div>
 
 <?php require_once 'config.php'; ?>
 <?php require_once DBAPI; ?>
@@ -25,13 +41,13 @@
 <?php include(HEADER_TEMPLATE); ?>
 <?php $db = open_database(); ?>
 
-<h1>Dashboard</h1>
+<h1>Painel de Controle</h1>
 <hr />
 
 <?php if ($db) : ?>
 
-<link href="css/bootstrap.min.css" rel="stylesheet">
-<link href="css/style.css" rel="stylesheet">
+<!-- <link href="css/bootstrap.min.css" rel="stylesheet">
+<link href="css/style.css" rel="stylesheet"> -->
 <!-- <link rel="icon" type="imagem/png" href="imagens/meufavicon.png" /> -->
 
 
