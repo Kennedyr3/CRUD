@@ -14,6 +14,9 @@
             padding-bottom: 0px;
             margin-bottom: 1px;
         }
+        .navbar navbar-expand-lg navbar-dark bg-dark{
+          background:red;
+        }
 
     </style>
     <link rel="stylesheet" href="<?php echo BASEURL; ?>css/style.css">
@@ -21,7 +24,7 @@
 </head>
 <body>
 
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark" role="navigation">
+    <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: rgb(3, 38, 49);" role="navigation">
       <div class="container">
         <div class="navbar">
 
