@@ -6,14 +6,14 @@
 	
 	if ($db) {
 		// echo '<h1>Banco de Dados Conectado!</h1>';
-		echo '<h1 class="bemvindo">Bem-Vindo!</h1>';
+		echo '<h5 class="bemvindo">Bem-Vindo!</h5>';
 	} else {
 		echo '<h1>ERRO: Não foi possível Conectar!</h1>';
 	}
 ?>
 <style>
  .bemvindo{
-	/* background-color:red; */
+	background-color: rgb(201, 201, 201);
 }
 </style>
 
