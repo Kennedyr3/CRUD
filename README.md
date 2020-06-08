@@ -1,2 +1,2 @@
 # CRUD
-CRUD criardo para trabalho universitário
+CRUD created for university work
